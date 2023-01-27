@@ -8,7 +8,7 @@ import java.util.ArrayList;
 //                                         CrudRepository<관리대상 entity, 관리대상 entity 대표 ID의 Type>
 public interface ArticleRepository extends CrudRepository<Article, Long> {
 
-    // Iterator type -> ArrayList로 Override
+    // Iterator type -> ArrayList 로 Override
     @Override
     ArrayList<Article> findAll();
 }
